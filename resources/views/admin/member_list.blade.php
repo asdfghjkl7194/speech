@@ -42,7 +42,7 @@
       </div>
       <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-        <button class="layui-btn" onclick="x_admin_show('添加用户','./member-add.html',600,400)"><i class="layui-icon"></i>添加</button>
+        <button class="layui-btn" onclick="x_admin_show('添加用户','/admin/member_add',600,400)"><i class="layui-icon"></i>添加</button>
         <span class="x-right" style="line-height:40px">共有数据：88 条</span>
       </xblock>
       <table class="layui-table">
@@ -53,12 +53,13 @@
             </th>
             <th>ID</th>
             <th>用户名</th>
-            <th>性别</th>
-            <th>手机</th>
-            <th>邮箱</th>
-            <th>地址</th>
-            <th>加入时间</th>
-            <th>状态</th>
+            <th>手机号</th>
+            <th>书名</th>
+            <th>图片</th>
+            <th>单价</th>
+            <th>总价</th>
+            <th>借阅时间</th>
+            <th>到期时间</th>
             <th>操作</th></tr>
         </thead>
         <tbody>
@@ -73,12 +74,10 @@
             <td>admin@mail.com</td>
             <td>北京市 海淀区</td>
             <td>2017-01-01 11:11:42</td>
+            <td>2017-01-01 11:11:42</td>
             <td class="td-status">
               <span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span></td>
             <td class="td-manage">
-              <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
-                <i class="layui-icon">&#xe601;</i>
-              </a>
               <a title="编辑"  onclick="x_admin_show('编辑','member-edit.html',600,400)" href="javascript:;">
                 <i class="layui-icon">&#xe642;</i>
               </a>
@@ -100,13 +99,11 @@
             <td>13000000000</td>
             <td>admin@mail.com</td>
             <td>北京市 海淀区</td>
+            <td>北京市 海淀区</td>
             <td>2017-01-01 11:11:42</td>
             <td class="td-status">
               <span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span></td>
             <td class="td-manage">
-              <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
-                <i class="layui-icon">&#xe601;</i>
-              </a>
               <a title="编辑"  onclick="x_admin_show('编辑','member-edit.html',600,400)" href="javascript:;">
                 <i class="layui-icon">&#xe642;</i>
               </a>

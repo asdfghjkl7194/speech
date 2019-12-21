@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/xadmin.css">
+    <link rel="stylesheet" href="/static/admin/css/font.css">
+    <link rel="stylesheet" href="/static/admin/css/xadmin.css">
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./lib/layui/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./js/xadmin.js"></script>
+    <script type="text/javascript" src="/static/admin/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/admin/js/xadmin.js"></script>
     <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
     <!--[if lt IE 9]>
       <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -22,112 +22,60 @@
   
   <body>
     <div class="x-body">
-        <form class="layui-form">
+        <form class="layui-form" method="post" href="{{url('')}}">
+        	
+        	
           <div class="layui-form-item">
               <label for="username" class="layui-form-label">
-                  <span class="x-red">*</span>用户名
+                  <span class="x-red">*</span>书名
               </label>
               <div class="layui-input-inline">
-                  <input type="text" id="username" name="username" required="" lay-verify="required"
+                  <input type="text" id="book_name" name="username" required="" lay-verify="book_name"
                   autocomplete="off" class="layui-input">
               </div>
           </div>
+        	
           <div class="layui-form-item">
               <label for="username" class="layui-form-label">
-                  <span class="x-red">*</span>收货人
+                  <span class="x-red">*</span>书价格
               </label>
               <div class="layui-input-inline">
-                  <input type="text" id="username" name="username" required="" lay-verify="required"
+                  <input type="text" id="book_money" name="book_money" required="" lay-verify="book_money"
                   autocomplete="off" class="layui-input">
               </div>
           </div>
+        	
           <div class="layui-form-item">
-              <label for="phone" class="layui-form-label">
-                  <span class="x-red">*</span>手机
+              <label for="username" class="layui-form-label">
+                  <span class="x-red">*</span>图片
               </label>
               <div class="layui-input-inline">
-                  <input type="text" id="phone" name="phone" required="" lay-verify="phone"
+                  <input type="file" id="book_img" name="book_img" required="" lay-verify="book_img"
                   autocomplete="off" class="layui-input">
               </div>
           </div>
+        	
           <div class="layui-form-item">
               <label for="username" class="layui-form-label">
-                  <span class="x-red">*</span>收货地址
+                  <span class="x-red">*</span>库存
               </label>
               <div class="layui-input-inline">
-                  <input type="text" id="username" name="username" required="" lay-verify="required"
+                  <input type="number" id="book_num" name="book_num" required="" lay-verify="book_num"
                   autocomplete="off" class="layui-input">
               </div>
           </div>
-          <div class="layui-form-item">
-              <label for="username" class="layui-form-label">
-                  <span class="x-red">*</span>配送物流
-              </label>
-              <div class="layui-input-inline">
-                  <select id="shipping" name="shipping" class="valid">
-                    <option value="shentong">申通物流</option>
-                    <option value="shunfeng">顺丰物流</option>
-                  </select>
-              </div>
-          </div>
-          <div class="layui-form-item">
-              <label for="username" class="layui-form-label">
-                  <span class="x-red">*</span>支付方式
-              </label>
-              <div class="layui-input-inline">
-                  <select name="contrller">
-                    <option>支付方式</option>
-                    <option>支付宝</option>
-                    <option>微信</option>
-                    <option>货到付款</option>
-                  </select>
-              </div>
-          </div>
-          <div class="layui-form-item">
-              <label for="L_email" class="layui-form-label">
-                  <span class="x-red">*</span>发票抬头
-              </label>
-              <div class="layui-input-inline">
-                  <input type="text" id="L_email" name="email" required="" lay-verify="email"
-                  autocomplete="off" class="layui-input">
-              </div>
-              <div class="layui-form-mid layui-word-aux">
-                  <span class="x-red">*</span>
-              </div>
-          </div>
-          <div class="layui-form-item layui-form-text">
-              <label for="desc" class="layui-form-label">
-                  商品增加
-              </label>
-              <div class="layui-input-block">
-                  <table class="layui-table">
-                    <tbody>
-                      <tr>
-                        <td>haier海尔 BC-93TMPF 93升单门冰箱</div></td>
-                        <td>0.01</div></td>
-                        <td>984</div></td>
-                        <td>1</td>
-                        <td>删除</td>
-                      </tr>
-                      <tr>
-                        <td>haier海尔 BC-93TMPF 93升单门冰箱</div></td>
-                        <td>0.01</div></td>
-                        <td>984</div></td>
-                        <td>1</td>
-                        <td>删除</td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-          </div>
+          
+          
           <div class="layui-form-item layui-form-text">
               <label for="desc" class="layui-form-label">
                   描述
               </label>
               <div class="layui-input-block">
-                  <textarea placeholder="请输入内容" id="desc" name="desc" class="layui-textarea"></textarea>
+                  <textarea placeholder="请输入内容" id="book_test" name="book_test" class="layui-textarea"></textarea>
               </div>
           </div>
+          
+          
           <div class="layui-form-item">
               <label for="L_repass" class="layui-form-label">
               </label>
@@ -135,6 +83,8 @@
                   增加
               </button>
           </div>
+          
+          
       </form>
     </div>
     <script>

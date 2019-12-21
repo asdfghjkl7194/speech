@@ -11,24 +11,27 @@ class Index extends Controller
     	return view('admin.welcome');
     }
     
-    /* 用户管理*/
+    /* 借书管理*/
     public function member_list(){
     	return view('admin.member_list');
     }
-    public function member_del(){
-    	return view('admin.member_del');
+    public function member_add(){
+    	return view('admin.member_add');
     }
     
-    /* 借书管理*/
+    /* 所有书籍*/
     public function order_list(){
    		return view('admin.order_list');
+    }
+    public function order_add(){
+   		return view('admin.order_add');
     }
     
     /* 后台管理*/
     public function admin_list(){
    		return view('admin.admin_list');
     }
-    public function admin_role(){
-   		return view('admin.admin_role');
-    }
+//  public function admin_role(){
+// 		return view('admin.admin_role');
+//  }
 }

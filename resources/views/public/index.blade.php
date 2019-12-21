@@ -53,26 +53,27 @@
       <div id="side-nav">
         <ul id="nav">
             <li>
-                <a href="javascript:;">
+                <!--<a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
-                    <cite>用户管理</cite>
+                    <cite>所有书籍</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
-                </a>
-                <ul class="sub-menu">
+                </a>-->
+                <ul class2="sub-menu">
                     <li>
                         <a _href="/admin/member_list">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员列表</cite>
+                    		<i class="iconfont">&#xe6b8;</i>
+                            <cite>借书管理</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
                         </a>
                     </li >
-                    <li>
+                    <!--<li>
                         <a _href="/admin/member_del">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员删除</cite>
+                            <cite>书籍删除</cite>
                             
                         </a>
                     </li>
-                    <!--<li>
+                    <li>
                         <a href="javascript:;">
                             <i class="iconfont">&#xe70b;</i>
                             <cite>会员管理</cite>
@@ -106,39 +107,41 @@
                 </ul>
             </li>
             <li>
-                <a href="javascript:;">
+                <!--<a href="javascript:;">
                     <i class="iconfont">&#xe723;</i>
                     <cite>借书管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
-                </a>
-                <ul class="sub-menu">
+                </a>-->
+                <ul class2="sub-menu">
                     <li>
                         <a _href="/admin/order_list">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>订单列表</cite>
+                            <i class="iconfont">&#xe723;</i>
+                            <cite>所有书籍</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
                         </a>
                     </li >
                 </ul>
             </li>
             <li>
-                <a href="javascript:;">
+                <!--<a href="javascript:;">
                     <i class="iconfont">&#xe726;</i>
                     <cite>后台管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
-                </a>
-                <ul class="sub-menu">
+                </a>-->
+                <ul class2="sub-menu">
                     <li>
                         <a _href="/admin/admin_list">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>管理员列表</cite>
+                   			<i class="iconfont">&#xe726;</i>
+                            <cite>后台管理</cite>
+                    		<i class="iconfont nav_right">&#xe697;</i>
                         </a>
                     </li >
-                    <li>
+                    <!--<li>
                         <a _href="/admin/admin_role">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>角色管理</cite>
                         </a>
-                    </li >
+                    </li >-->
                     <!--<li>
                         <a _href="/admin/admin_cate">
                             <i class="iconfont">&#xe6a7;</i>
