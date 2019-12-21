@@ -18,6 +18,6 @@ Route::prefix('admin')->group(function(){
 	
 	/* 后台管理*/
 	Route::get('admin_list','admin\Index@admin_list');	// 订单列表
-//	Route::get('admin_role','admin\Index@admin_role');	// 订单列表
+	Route::get('admin_add','admin\Index@admin_add');	// 订单列表
 	
 });

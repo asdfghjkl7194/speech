@@ -31,7 +31,7 @@ class Index extends Controller
     public function admin_list(){
    		return view('admin.admin_list');
     }
-//  public function admin_role(){
-// 		return view('admin.admin_role');
-//  }
+    public function admin_add(){
+   		return view('admin.admin_add');
+    }
 }
